@@ -30,6 +30,8 @@ def divide_by_five(x):
 
 for x in range(MAXVAL+1):
     # print(x)
+    if (divide_by_two(x) and divide_by_three(x) and divide_by_five(x) != 0):
+        list_of_words.append('')
     if (divide_by_two(x) == 0):
         # append foo to a list
         list_of_words.append("foo")
