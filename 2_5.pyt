@@ -13,6 +13,7 @@
 
 '''
 MAXVAL = 30
+list_of_words = []
 
 
 def divide_by_two(x):
@@ -31,8 +32,13 @@ for x in range(MAXVAL+1):
     # print(x)
     if (divide_by_two(x) == 0):
         # append foo to a list
-        print(f"{x}: foo")
+        list_of_words.append("foo")
+        # print(f"{x}: foo")
     if (divide_by_three(x) == 0):
-        print(f"{x}: bar")
+        list_of_words.append("bar")
+        # print(f"{x}: bar")
     if (divide_by_five(x) == 0):
-        print(f"{x}: baz")
+        list_of_words.append("baz")
+        # print(f"{x}: baz")
+    joined_list = ''.join(list_of_words)
+    print(f"{x}: {joined_list}")
