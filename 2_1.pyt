@@ -14,7 +14,7 @@ PSEUDOCODE
         iii. append the two to the new list
         ii. then squish the together to create a number
 4. add
-    a.those three digits together
+    a.those three digits together from 3a
     b. print the reult
 5. divide STEP 3 by  STEP 4
     a. divide the 3 digit by the sum of STEP 4
@@ -39,9 +39,15 @@ def mathematics(x):
     increment_str = ''.join(increment_list)
     print(
         f"The result from joing {x} and incrementing it twice is: ", increment_str)
+
     # STEP 4
-    # STEP 5
-    # STEP 6
+    adding_increment = int(
+        increment_list[0]) + int(increment_list[1]) + int(increment_list[2])
+    print(
+        f"When adding {increment_list[0]}, {increment_list[1]}, and {increment_list[2]}. You will get {adding_increment}")
+
+# STEP 5
+# STEP 6
 
 
 user_input = input('Please choose a whole number between 1 - 7: ')
