@@ -50,6 +50,9 @@ def mathematics(x):
     print(
         f"When you divide {increment_str} by {adding_increment} then you will have the result: {divide_increments}")
 # STEP 6
+    truncated_float = int(divide_increments)
+    print(
+        f"When getting the rounded down version of {divide_increments} you get {truncated_float}")
 
 
 user_input = input('Please choose a whole number between 1 - 7: ')
