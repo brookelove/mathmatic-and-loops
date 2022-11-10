@@ -37,15 +37,8 @@ def mathematics(x):
         increment_list.append(str(i))
     # print(increment_list)
     increment_str = ''.join(increment_list)
-    print(increment_str)
-    # index = 0
-    # for index in increment_list:
-    #     incremet_str = increment_list.pop(index)
-    #     ++index
-
-    # print(increment_list)
-    # prints ([3,4,5])
-
+    print(
+        f"The result from joing {x} and incrementing it twice is: ", increment_str)
     # STEP 4
     # STEP 5
     # STEP 6
