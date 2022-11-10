@@ -35,7 +35,6 @@ def mathematics(x):
     # STEP 3
     for i in range(x, x + 3):
         increment_list.append(str(i))
-    # print(increment_list)
     increment_str = ''.join(increment_list)
     print(
         f"The result from joing {x} and incrementing it twice is: ", increment_str)
@@ -47,6 +46,9 @@ def mathematics(x):
         f"When adding {increment_list[0]}, {increment_list[1]}, and {increment_list[2]}. You will get {adding_increment}")
 
 # STEP 5
+    divide_increments = int(increment_str)/adding_increment
+    print(
+        f"When you divide {increment_str} by {adding_increment} then you will have the result: {divide_increments}")
 # STEP 6
 
 
