@@ -8,9 +8,11 @@ import math
 
 
 def even_or_odd(x):
-    y = (x/2)
-    y = math.modf(y)
-    return print(f"After inputing {user_input} the computer has deterimed that it will be either even, indicated by 0 or odd represented by a number 1. Here are the reults: {int(y[-1])}")
+    y = (x % 2)
+    print(y)
+    # y = math.modf(y)
+    # print(y)
+    return print(f"After inputing {user_input} the computer has deterimed that it will be either even, indicated by 0 or odd represented by a number 1. Here are the reults: {y}")
 
 
 user_input = input("Please input a number: ")
