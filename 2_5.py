@@ -11,6 +11,7 @@
     b. print teh output of each number in a loop on a single line
 4. seprator line 
 5. create the same idea but with a while loop 
+    a. def
 
 '''
 MAXVAL = 30
@@ -43,5 +44,13 @@ def for_v_foobarbuz():
         print(f"{x}: {joined_list}")
 
 
+def while_v_foobarbuz():
+    num = 1
+    while num < MAXVAL + 1:
+        print(num)
+        num = num + 1
+
+
 for_v_foobarbuz()
 print("==================== seperator =================")
+while_v_foobarbuz()
