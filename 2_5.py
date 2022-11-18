@@ -46,9 +46,19 @@ def for_v_foobarbuz():
 
 def while_v_foobarbuz():
     num = 1
-    while num < MAXVAL + 1:
-        print(num)
+    while num < MAXVAL:
+
+        list_of_words.clear()
         num = num + 1
+        if (divide_by_two(num) == 0):
+            # append foo to a list
+            list_of_words.append("foo")
+        if (divide_by_three(num) == 0):
+            list_of_words.append("bar")
+        if (divide_by_five(num) == 0):
+            list_of_words.append("baz")
+        joined_list = ''.join(list_of_words)
+        print(f"{num}:{joined_list}")
 
 
 for_v_foobarbuz()
